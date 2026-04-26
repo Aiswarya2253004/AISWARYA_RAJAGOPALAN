@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Resume</title>
+  <meta charset="UTF-8">
+  <title>Neon Calculator Pro</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h2>Aiswarya Rajagopalan – Resume</h2>
-  <a href="Aiswarya_Rajagopalan_71812253004.pdf" target="_blank">
-    Click here to view resume
-  </a>
+
+<div class="bg-glow"></div>
+
+<div class="app">
+
+  <div class="header">
+    <h1>NEON CALCULATOR</h1>
+    <p>Glass + Neon UI Design</p>
+  </div>
+
+  <div class="calculator">
+
+    <input type="text" id="display" disabled>
+
+    <div class="buttons">
+
+      <button class="util" onclick="clearDisplay()">AC</button>
+      <button class="util" onclick="deleteLast()">DEL</button>
+      <button class="util" onclick="appendValue('%')">%</button>
+      <button class="op" onclick="appendValue('/')">÷</button>
+
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button class="op" onclick="appendValue('*')">×</button>
+
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button class="op" onclick="appendValue('-')">−</button>
+
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button class="op" onclick="appendValue('+')">+</button>
+
+      <button class="zero" onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('.')">.</button>
+      <button class="equal" onclick="calculate()">=</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
